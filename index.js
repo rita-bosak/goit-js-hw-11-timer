@@ -20,7 +20,7 @@ class CountdownTimer {
     let currentDate = Date.now();
 
     if (this.targetDate <= currentDate) {
-      alert('Недопустимая дата для обратного отсчета');
+      //   alert('Недопустимая дата для обратного отсчета');
       return;
     }
 
