@@ -14,6 +14,7 @@ class CountdownTimer {
     this.selector = selector;
     this.targetDate = targetDate;
     this.onTick = onTick;
+    this.start();
   }
 
   start() {
