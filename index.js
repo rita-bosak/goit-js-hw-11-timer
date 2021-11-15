@@ -14,7 +14,7 @@ class CountdownTimer {
     this.selector = selector;
     this.targetDate = targetDate;
     this.onTick = onTick;
-    this.start();
+    this.start = this.start();
   }
 
   start() {
@@ -48,8 +48,6 @@ const timer = new CountdownTimer({
   targetDate: new Date('Dec 31, 2021'),
   onTick: updateClockComponents,
 });
-
-timer.start();
 
 function updateClockComponents({ days, hours, mins, secs }) {
   refs.days.textContent = `${days}`;
